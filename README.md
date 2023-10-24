@@ -9,3 +9,5 @@ Ex: sudo ./DEinstall-Arch.sh
 
 These scripts are very much Alpha quality and might not work they were just made by a kid in college
 I'm in the process of learning these things please be patient :)
+
+Check the releases for the Scripts :)
