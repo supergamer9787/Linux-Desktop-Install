@@ -1,0 +1,80 @@
+#!/bin/bash
+
+# Check if the script is being run as root
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run this script as root or with sudo."
+    exit 1
+fi
+
+# List available desktop environments
+echo "Available Desktop Environment:"
+echo "1. GNOME Desktop Environment"
+echo "2. KDE Plasma Desktop Environment"
+echo "3. Xfce Desktop Environment"
+echo "4. LXQt Desktop Environment"
+echo "5. Cinnamon Desktop Environment"
+echo "6. MATE Desktop Environment"
+echo "7. LXDE Desktop Environment"
+echo "8. Budgie Desktop Environment"
+echo "9. Deepin Desktop Environment"
+echo "0. Exit Without Changes"
+
+# Ask the user to select an option
+read -p "Enter the number of the desktop environment to install: " choice
+
+case $choice in
+    1)
+        DE="gnome"
+        DM="gdm"
+        ;;
+    2)
+        DE="plasma-desktop"
+        DM="sddm"
+        ;;
+    3)
+        DE="xfce"
+        DM="lightdm"
+        ;;
+    4)
+        DE="lxqt"
+        DM="sddm"
+        ;;
+    5)
+        DE="cinnamon"
+        DM="gdm"
+        ;;
+    6)
+        DE="mate"
+        DM="lightdm"
+        ;;
+    7)
+        DE="lxde"
+        DM="lxde"
+        ;;
+    8)
+        DE="budgie-desktop"
+        DM="lightdm"
+        ;;
+    9)
+        DE="deepin"
+        DM="lightdm"
+        ;;
+    0)
+        echo "Exiting without installing a desktop environment."
+        exit 0
+        ;;
+    *)
+        echo "Invalid choice. Please enter a valid number."
+        exit 1
+        ;;
+esac
+
+# Install the selected desktop environment
+dnf groupinstall "$DE"
+
+# Set the display manager to the default one associated with the desktop environment
+systemctl set-default graphical.target
+systemctl set-default multi-user.target
+systemctl enable $DM
+
+echo "Installation complete!"
