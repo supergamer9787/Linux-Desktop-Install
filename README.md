@@ -18,6 +18,8 @@ What are these scripts: These are bash shell scripts that I created that automat
 
 How do I get started: Firstly you want to check out my releases page and download the script that matches to your distrobution. If your unsure, I have made a Generic list to choose from. If your distro isn't in the list as there are so many to keep track of, a generic google search or your distrobutions basic documentation will tell you.
 
+Releases: https://github.com/supergamer9787/Linux-Desktop-Install/releases
+
 
 Anyone with these distros will want to use the Debian install script:
 
