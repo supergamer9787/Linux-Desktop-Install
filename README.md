@@ -70,7 +70,7 @@ Anyone with these distros will want to use the Arch script:
 7. Archlabs Linux
 8. Garuda Linux
 
-What to do after downloading the correct script for my distro: Your browser most likely saved the script to your donwloads folder in your home directory. Simply open a terminal and type "cd Downloads".
+What to do after downloading the correct script for my distro: Your browser most likely saved the script to your downloads folder in your home directory. Simply open a terminal and type "cd Downloads".
 
 How to execute/use the script: Fist things first you will need to make the script execuatble before you can use it. Its a neat security feature in linux to stop files with bad intent from using it. Don't worry my code is safe, check it out yourself if you don't believe me. To make the script execute simply type "chmod +x NAMEOFSCRIPT" What this does is changes the files permissions so its executable. Next type "sudo ./NAMEOFSCRIPT" Afterwards simply follow the prompts to install the desktop enviornment of choice and reboot when its finished.
 
