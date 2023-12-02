@@ -12,11 +12,11 @@ I'm in the process of learning these things please be patient :)
 
 Check the releases for the Scripts :)
 
-I have provided some basic documentation and clarifications for the scripts down below. For your convinence I have included a Text file in the releases with the documentation as well
+I have provided some basic documentation and clarifications for the scripts down below. For your convinence I have included a Text file in the releases with the documentation as well.
 
-What are these scripts: These are bash shell scripts that I created that automate the installation of a desktop enviornment that better suits you instead of having to change linux distros which are a headache for most people
+What are these scripts: These are bash shell scripts that I created that automate the installation of a desktop enviornment that better suits you instead of having to change linux distros which are a headache for most people.
 
-How do I get started: Firstly you want to check out my releases page and download the script that corrisponds to your distrobution. If your unsure, I have made a Generic list to choose from. If your distro isn't in the list as there are so many to keep track of, a generic google search or your distrobutions basic documentation will tell you
+How do I get started: Firstly you want to check out my releases page and download the script that corrisponds to your distrobution. If your unsure, I have made a Generic list to choose from. If your distro isn't in the list as there are so many to keep track of, a generic google search or your distrobutions basic documentation will tell you.
 
 
 Anyone with these distros will want to use the Debian install script:
@@ -68,7 +68,7 @@ Anyone with these distros will want to use the Arch script:
 7. Archlabs Linux
 8. Garuda Linux
 
-What to do after downloading the correct script for my distro: Your browser most likely saved the script to your donwloads folder in your home directory. Simply open a terminal and type "cd Downloads"
+What to do after downloading the correct script for my distro: Your browser most likely saved the script to your donwloads folder in your home directory. Simply open a terminal and type "cd Downloads".
 
 How to execute/use the script: Fist things first you will need to make the script execuatble before you can use it. Its a neat security feature in linux to stop files with bad intent from using it. Don't worry my code is safe, check it out yourself if you don't believe me. To make the script execute simply type "chmod +x NAMEOFSCRIPT" What this does is changes the files permissions so its executable. Next type "sudo ./NAMEOFSCRIPT" Afterwards simply follow the prompts to install the desktop enviornment of choice and reboot when its finished.
 
