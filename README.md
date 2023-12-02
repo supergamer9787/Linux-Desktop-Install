@@ -45,7 +45,7 @@ Anyone with these distros will want to use the Ubuntu script:
 7. Ubuntu cinnamon Linux
 8. Linux Mint (My personnel favorite for new users BTW)
 9. Elementary OS Linux
-10. Zorion OS Linux
+10. Zorin OS Linux
 11. Pop OS! Linux
 12. KDE neon Linux
 
